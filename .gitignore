@@ -1,0 +1,48 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript compiled output
+dist/
+build/
+
+# TypeScript configuration and output logs
+*.tsbuildinfo
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE/Editor-specific files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Optional npm debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+yarn.lock
+
+# Debug
+debug/
+
+# Other output directories
+coverage/
+.cache/
+out/
+temp/
+
+# Ignore test reports
+*.test-output/
+coverage/
