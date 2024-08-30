@@ -9,11 +9,10 @@ export const registerUser = async (
   const { name, email, phoneNumber } = req.body;
 
   try {
-    const user = new User({ name, email, phoneNumber, isVerified: false });
+    const user = new User({ name, email, phoneNumber });
     await user.save();
-
     res.status(201).json({ message: "User registered successfully" });
   } catch (error: unknown) {
-    res.status(500).json({ error: error });
+    throw error;
   }
 };
